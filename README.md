@@ -1,6 +1,6 @@
 # Getting Started with CRUD React App
 
-This project was releated to React CRUD 
+This project was releated to React CRUD Operations
 
 ## How to start the project
 
