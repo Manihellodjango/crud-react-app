@@ -1,0 +1,31 @@
+{
+  "tasks": [
+    {
+      "id": "d82d",
+      "title": "Finish the Frontend Module",
+      "description": "The modules which are using frontend finish it as fast as possible",
+      "startDate": "2025-03-23",
+      "endDate": "2025-03-24",
+      "priority": "High",
+      "completed": false
+    },
+    {
+      "id": "89e0",
+      "title": "Finish the Backend Module",
+      "description": "The modules which are using Backend finish it as fast as possible",
+      "startDate": "2025-03-25",
+      "endDate": "2025-03-27",
+      "priority": "Medium",
+      "completed": false
+    },
+    {
+      "id": "a7d7",
+      "title": "Complete the Database",
+      "description": "By the end of next 2 days finish the Mysql server ",
+      "startDate": "2025-03-28",
+      "endDate": "2025-03-29",
+      "priority": "Low",
+      "completed": false
+    }
+  ]
+}

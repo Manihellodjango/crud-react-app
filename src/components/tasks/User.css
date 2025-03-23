@@ -1,0 +1,283 @@
+/* Common Styles for CreateTask, EditTask, and DetailTask */
+.task-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.task-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  max-width: 500px;
+  width: 100%;
+  margin-top: 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Adjust card width for smaller screens */
+@media (max-width: 600px) {
+  .task-card {
+      max-width: 90%;
+      padding: 16px;
+  }
+}
+
+.task-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Responsive Form */
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 8px;
+}
+
+/* Make input fields more touch-friendly */
+.form-control {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Adjust input field padding for mobile */
+@media (max-width: 600px) {
+  .form-control {
+      font-size: 14px;
+      padding: 10px;
+  }
+}
+
+/* Validation Errors */
+.form-control.is-invalid {
+  border-color: red;
+}
+
+.invalid-feedback {
+  color: red;
+  font-size: 14px;
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* Submit Button */
+.submit-button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Adjust button size for mobile */
+@media (max-width: 600px) {
+  .submit-button {
+      font-size: 14px;
+      padding: 10px 20px;
+  }
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+/* Icons */
+.fa-pencil, .fa-eye {
+  color: black;
+  margin-right: 10px;
+}
+.fa-trash-o {
+  color: red;
+}
+
+/* Search Box */
+.search-container {
+  position: relative;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Adjust search icon position for mobile */
+.search-icon {
+  color: #007bff;
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Adjust search input for mobile */
+.search-input {
+  padding-left: 40px;
+  border: 2px solid #007bff;
+}
+
+/* Table container to enable horizontal scrolling */
+.table-responsive {
+  overflow-x: auto;
+}
+
+/* Ensure the table is fully visible on small screens */
+.table {
+  width: 100%;
+  white-space: normal; /* Allow text wrapping */
+  word-wrap: break-word;
+}
+
+/* Adjusting table headers for better mobile display */
+@media (max-width: 768px) {
+  .table thead {
+      display: none; /* Hide headers on mobile */
+  }
+
+  .table tbody, .table tr, .table td {
+      display: block;
+      width: 100%;
+  }
+
+  .table tr {
+      margin-bottom: 10px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 10px;
+      background-color: white;
+  }
+
+  .table td {
+      text-align: right;
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 10px;
+      position: relative;
+  }
+
+  .table td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      color: #333;
+      flex: 1;
+      text-align: left;
+  }
+
+  /* Stack buttons for mobile */
+  .btn {
+      display: block;
+      width: 100%;
+      margin-bottom: 8px;
+  }
+}
+
+/* Search bar adjustments */
+@media (max-width: 600px) {
+  .search-container {
+      max-width: 90%;
+      width: 100%;
+  }
+
+  .search-input {
+      font-size: 14px;
+      
+  }
+}
+
+/* Priority Labels */
+.priority-high {
+  color: red;
+  font-weight: bold;
+}
+.priority-medium {
+  color: orange;
+  font-weight: bold;
+}
+.priority-low {
+  color: green;
+  font-weight: bold;
+}
+
+/* Make priority labels smaller on mobile */
+@media (max-width: 600px) {
+  .priority-high, .priority-medium, .priority-low {
+      font-size: 14px;
+  }
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Social Links */
+.social-links a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation Links */
+.navbar-nav .nav-link {
+  color: white !important; 
+  font-weight: bold; 
+  text-decoration: none; 
+  position: relative; 
+}
+
+/* Underline effect for active link */
+.navbar-nav .nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translateY(-20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
