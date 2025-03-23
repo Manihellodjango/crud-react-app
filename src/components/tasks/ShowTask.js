@@ -44,7 +44,7 @@ const ShowTask = () => {
     try {
       await deleteTask(id);
       setTasks(prevTasks => prevTasks.filter(task => task.id !== id));
-      toast.success("Task deleted successfully!", { position: "top-center", autoClose: 3000, theme: 'colored', style: { backgroundColor: 'red' } });
+      toast.success("Task deleted successfully!", { position: "top-center", autoClose: 3000, theme: 'colored', style: { backgroundColor: 'red' }});
     } catch (error) {
       console.error("Error deleting task:", error);
       toast.error("Failed to delete task. Please try again.");
@@ -70,7 +70,7 @@ const ShowTask = () => {
           <input
             type="text"
             className="form-control search-input"
-            placeholder="Search" 
+            placeholder="Search task" 
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />

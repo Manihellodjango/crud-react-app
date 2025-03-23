@@ -90,8 +90,8 @@ const EditTask = () => {
         autoClose: 3000,
         style: { backgroundColor: "blue" },
       });
-    } catch (err) {
-      console.error("Error updating task:", err);
+    } catch (error) {
+      console.error("Error updating task:", error);
       setError("Failed to update task. Please try again.");
       toast.error("Failed to update task.", {
         theme: "colored",
