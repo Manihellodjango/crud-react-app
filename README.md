@@ -4,7 +4,7 @@ This project was releated to React CRUD
 
 ## How to start the project
 
-step 1: Clone the Repository from Github ------> git clone 
+step 1: Clone the Repository from Github ------> git clone https://github.com/Manihellodjango/crud-react-app.git
 
 step 2: Install node modules ---------> npm install 
 
