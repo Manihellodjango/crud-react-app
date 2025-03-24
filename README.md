@@ -13,32 +13,33 @@ step 3: Run the Backend JSON SERVER ----------> npx json-server --watch db.json
 step 4: Run the Frontend application -------> npm start 
 
 
-# Task Management Application
+# Task Management Anwendung
 
-A simple and intuitive task management application built with React. This application allows users to view, add, edit, mark as complete, and delete tasks. It uses React Router for navigation, Context API for state management, and JSON Server for simulating a backend API.
+Eine einfache und intuitive Anwendung zur Aufgabenverwaltung, die mit React erstellt wurde. Mit dieser Anwendung können Benutzer Aufgaben anzeigen, hinzufügen, bearbeiten, als abgeschlossen markieren und löschen. Sie verwendet React Router für die Navigation, Context API für die Statusverwaltung und JSON Server für die Simulation einer Backend-API. 
 
-## Features
+## Funktionen
 
-### 1. **Task Management**
-- **View a list of all tasks**: See all tasks in a clean and organized table.
-- **Add new tasks**: Easily add new tasks with a title, description, start date, end date, and priority level of the Task.
-- **Mark tasks as completed**: Toggle the completion status of tasks.
-- **Edit tasks**: Update the title, description, and other details of existing tasks.
-- **Delete tasks**: Remove tasks that are no longer needed.
+### 1. **Aufgabenverwaltung**
+- **Liste aller Aufgaben anzeigen**: Sehen Sie alle Aufgaben in einer übersichtlichen und organisierten Tabelle.
+- **Neue Aufgaben hinzufügen**: Fügen Sie auf einfache Weise neue Aufgaben mit Titel, Beschreibung, Start- und Enddatum sowie Prioritätsstufe der Aufgabe hinzu.
+- **Aufgaben als erledigt markieren**: Schalten Sie den Erledigungsstatus von Aufgaben um.
+- **Aufgaben bearbeiten**: Aktualisieren Sie den Titel, die Beschreibung und andere Details von bestehenden Aufgaben.
+- **Aufgaben löschen**: Entfernen Sie Aufgaben, die nicht mehr benötigt werden.
 
-### 2. **Technical Features**
-- **React with Hooks**: Built using functional components and React Hooks (`useState`, `useEffect`).
+
+### 2. **Technische Anforderungen**
+- **React with Hooks**:  Aufbauend auf funktionalen Komponenten und React Hooks (`useState`, `useEffect`).
 - **React Router**: Supports multiple pages:
-  - `/tasks`: Overview of all tasks.
-  - `/tasks/:id`: Detailed view of a specific task.
-- **JSON Server**: Simulates a backend API for CRUD operations.
-- **Context API**: Manages global state for tasks.
-- **Error Handling**: Gracefully handles faulty API requests and displays user-friendly error messages.
+  - `/tasks`: Übersicht über alle Aufgaben.
+  - `/tasks/:id`: Detaillierte Ansicht einer bestimmten Aufgabe..
+- **JSON Server**:  Simuliert eine Backend-API für CRUD-Operationen.
+- **Context API**: Verwaltet den globalen Status für Aufgaben.
+- **Error Handling**: Behandelt fehlerhafte API-Anfragen und zeigt benutzerfreundliche Fehlermeldungen an.
 
-### 3. **Additional Features**
-- **Unit Tests**: Includes unit tests written with Jest.
-- **Optimized Performance**: Uses lazy loading and memoization for better performance.
-- **Mobile Responsiveness**: Designed to work seamlessly on both desktop and mobile devices (Each Task will be displayed as a card).
-- **User-Friendly UI/UX**: Provides feedback using toast messages and smooth animations.
+### 3. **Zusätzliche Bewertungskriterien**
+- **Unit Tests**: Enthält mit Jest geschriebene Unit-Tests..
+- **Optimized Performance**: Verwendet Lazy Loading und Memoization für bessere Leistung.
+- **Mobile Responsiveness**: Entwickelt, um sowohl auf dem Desktop als auch auf mobilen Geräten nahtlos zu funktionieren (jede Aufgabe wird als Karte angezeigt).
+- **Benutzerfreundliche UI/UX**: Bietet Feedback durch Toast-Nachrichten und sanfte Animationen.
 
 ---
